@@ -1,0 +1,60 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 5;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;  
+    display: flex;
+    gap: 0.8rem; 
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.picto-nav {
+    color: var(--color-white);
+    font-size: 1.2rem;     
+}
+
+nav a {
+    background: transparent;
+    padding: 0.7rem;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+nav a.active {
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--color-green);
+}
+
+/******************************************/
+/***************Media query Tablet********/
+
+@media screen and (max-width: 1024px) {    
+        nav a {            
+            padding: 1rem;
+    }
+  }
+  
+  /******************************************/
+  /***************Media query smartphone********/
+  
+  @media screen and (max-width: 600px) {
+        nav a {            
+         padding: 0.9rem;
+    }
+  }
+  

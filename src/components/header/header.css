@@ -1,0 +1,168 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+header {
+    height: 100vh;
+    padding-top: 4rem;
+    overflow: hidden;   
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;        
+}
+
+.logo {
+    max-width: 18%;
+    display: block;
+    margin-left: 30vw;
+    margin-top: 5vw;
+}
+
+.titre {
+    font-size: 2.2rem;
+    width: 20%;
+    line-height: 1.2em;
+    margin-top: 5vw;
+    margin-left: 9vw;
+}
+
+.titre2 {
+    font-size: 2.2rem;
+    margin-right: 19vw;
+    margin-top: -3vw;
+}
+
+.titre2 span {
+    color: var(--color-green);
+    font-size: 5rem;
+}
+
+.cta {
+    margin-top: 1vw;
+    font-weight: 500;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+.deco-header {
+    max-width: 8%;
+    display: block;
+    margin: 3vw auto;
+    padding-bottom: 2em;
+}
+
+.header__socials {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 5rem;
+    bottom: 3rem;
+    font-size: 1.2rem;    
+}
+
+.line {
+    width: 5px;
+    height: 5rem;
+    background: var(--color-green);  
+}
+
+.header__socials::before {
+    content: "";
+    width: 5px;
+    height: 18vw;
+    background: var(--color-green);
+}
+
+.header__socials::after {
+    content: "";
+    width: 5px;
+    height: 2rem;
+    background: var(--color-green);
+}
+
+.scroll__down {
+    position: absolute;
+    right: 2.3rem;
+    bottom: 5rem;  
+    font-size: 1.5rem;  
+}
+
+/******************************************/
+/***************Media query Tablet********/
+
+@media screen and (max-width: 1042px) {
+  header {
+      height: 88vh;
+  }
+
+  .titre, .titre2 {
+    font-size: 1.5rem;
+  }
+
+    .cta {
+        margin-top: -35vw;        
+        margin-left: 55vw;         
+    }
+
+    .logo {
+        max-width: 38%;    
+        margin-top: 9vw;
+        margin-left: 10vw;
+    }
+
+    .scroll__down {
+        display: none;
+    }
+
+    .line, .header__socials::before, .deco-header  {
+        display: none; 
+    }
+
+    .header__socials {       
+        bottom: 0.5rem;  
+        left: 1rem;         
+    } 
+    
+}
+
+/******************************************/
+/***************Media query smartphone********/
+
+@media screen and (max-width: 600px) {
+   header {
+       height: 100vh;
+   }
+
+   .titre, .titre2 {
+       font-size: 1.5rem;
+   }
+   
+
+   .scroll__down {
+       display: none;
+   }
+
+   
+    .logo {
+        max-width: 58%;    
+        margin-top: 9vw;
+        margin-left: 10vw;
+    }
+
+    .line, .header__socials::before, .deco-header {
+        display: none; 
+    }
+
+    .header__socials {       
+        left: 2rem;           
+    }
+
+    .cta {
+        margin-top: 2.5vw;
+        margin-left: 0;        
+    }
+}

@@ -1,0 +1,130 @@
+#work {
+    margin-top: 0;
+    height: 100vh;
+}
+
+.work__container {    
+    text-align: center;
+    height: 100%;       
+    background: var(--color-bg-work) !important;     
+    border-radius: 0 !important;    
+}
+
+.inside {    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    width: 96%;
+    text-align: center;   
+    margin: auto;   
+}
+
+.thumbnail{
+    max-width: 95%;
+}
+
+.sec-title-work {
+    margin-right: 25vw;
+    margin-top: 1vw;
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.line-title-work {
+    width: 15vw;
+    height: 5px;
+    background-color: var(--color-yellow);
+}
+
+.sec-title-work h3 {
+    color: var(--color-bg);    
+}
+
+.deco-work {
+    max-width: 0.8%;
+    margin-top: 2vw;
+    margin-left: 16vw;   
+    transform: rotate(90deg);
+}
+
+.portfolio__item {
+    background-color: var(--color-bg);
+    padding: 1rem;    
+    transition: var(--transition);
+    width: 100%; 
+    height: 57vh; 
+}
+
+.portfolio__item:hover {
+    background-color: var(--color-bg-variant);        
+}
+
+.portfolio__item-image {
+    display: flex;
+    justify-content: center;
+    max-width: auto;
+    height: 55%;
+    margin-bottom: 0.6rem;
+}
+
+.portfolio__item h3 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.container-item {
+    height: 80%;
+}
+
+.btn.btn-work {
+    border: 3px solid var(--color-green) !important;
+    color: var(--color-white) !important;    
+}
+
+.link-book {
+    color: var(--color-purple);
+}
+
+/******************************************/
+/***************Media query smartphone********/
+
+@media screen and (max-width: 600px) {
+
+    #work {      
+        height: 80vh;
+    }
+    
+    .inside {       
+      grid-template: 1fr 1fr;
+      gap: 1.2rem;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+
+    .portfolio__item {
+        width: 145vw;
+        height: 100%;
+    }
+
+    .deco-work {
+       display: none;
+    }    
+}
+
+/******************************************/
+/***************Media query Tablet********/
+
+@media screen and (max-width: 1024px) {
+    .portfolio__item {
+        width: 83vw; 
+        height: 54vh;      
+    }
+
+    .inside {        
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+}

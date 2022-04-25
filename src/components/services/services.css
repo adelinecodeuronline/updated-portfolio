@@ -1,0 +1,103 @@
+.services__container {
+    text-align: center;
+    height: 100%;       
+    background-image: url("../../assets/deco-services.svg"), var(--color-bg-services) !important;     
+    background-size: contain!important;        
+    border-radius: 0 !important;  
+}
+
+.sec-title {
+    margin-left: 26vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+.line-title {
+    width: 15vw;
+    height: 5px;
+    background-color: var(--color-yellow);
+}
+
+.services-sec {
+    margin-left: 28vw;
+    display: flex;    
+}
+
+.card-services {
+    margin-top: 4vw;
+    margin-left: 4vw;
+    background-color: var(--color-bg);
+    width: 245px;
+    height: 375px; 
+    padding: 0.9rem;
+    transition: var(--transition);
+    text-align: left;
+}
+
+.card-services:hover {
+    transform: scale(1.3);
+    transition: var(--transition);
+}
+
+.card-services h1 {
+    line-height: 2.3rem;
+    font-size: 2rem;
+    white-space: pre-line;
+    width: 80%;
+}
+
+.card-services p {
+    margin-top: 4vw;
+    white-space: pre-line;
+}
+
+.card-services span {
+    color: var(--color-yellow);
+}
+
+.line-card {
+    width: 100%;
+    height: 5px;
+    background-color: var(--color-green);
+    margin-bottom: 1vw;
+}
+
+.blue-line-card {
+    background-color: var(--color-bg); 
+}
+
+.green-car-services {
+    background-color: var(--color-green);
+}
+
+.green-car-services p, .green-car-services h1 {
+    color: var(--color-bg);
+}
+
+/******************************************/
+/***************Media query********/
+
+@media screen and (max-width: 1024px) {
+    #services{
+        height: 100%;       
+    }
+
+    .services-sec {
+        flex-direction: column;
+    }
+
+    .card-services {        
+        width: 90%;
+        height: 20%;     
+        margin-left: 0;   
+        margin-right: 2vw;
+    }  
+    
+    .card-services h1 {        
+        font-size: 1.5rem;      
+    }
+
+}
